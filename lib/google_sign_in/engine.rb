@@ -19,6 +19,7 @@ module GoogleSignIn
         GoogleSignIn.client_secret = config.google_sign_in.client_secret || app.credentials.dig(:google_sign_in, :client_secret)
         GoogleSignIn.authorize_url = config.google_sign_in.authorize_url
         GoogleSignIn.token_url     = config.google_sign_in.token_url
+        GoogleSignIn.scopes        = config.google_sign_in.scopes
 
         GoogleSignIn.oauth2_client_options = config.google_sign_in.oauth2_client_options
       end

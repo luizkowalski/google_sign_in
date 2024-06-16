@@ -8,6 +8,7 @@ module GoogleSignIn
   mattr_accessor :authorize_url, default: "https://accounts.google.com/o/oauth2/auth"
   mattr_accessor :token_url, default: "https://oauth2.googleapis.com/token"
   mattr_accessor :oauth2_client_options, default: nil
+  mattr_accessor :scopes, default: "openid email profile"
 
   # https://tools.ietf.org/html/rfc6749#section-4.1.2.1
   authorization_request_errors = %w[
